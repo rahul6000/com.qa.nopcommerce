@@ -2,7 +2,9 @@ package com.qa.auto.pages;
 
 import com.qa.auto.base.TestBase;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends TestBase {
 
@@ -23,17 +25,28 @@ public class HomePage extends TestBase {
 
 
 
+    public HomePage () {
+        PageFactory.initElements(driver, this);
+    }
 
 
+    public void searchbar(String search) {
+        //searchBar.sendKeys(search);
+        searchBar.sendKeys(prop.getProperty(search));
+        searchBtn.click();
+    }
+    public boolean validateLogoImg() {
+        return logoImg.isDisplayed();
+    }
+    public void compLabel(){
+        Actions action= new Actions (driver);
+        action.moveToElement(computerLabel).build().perform();
+    }
+    public void radioBtn1(){
 
+        excellRadioBtn.click();
 
-
-
-
-
-
-
-
+    }
 
 
 }
