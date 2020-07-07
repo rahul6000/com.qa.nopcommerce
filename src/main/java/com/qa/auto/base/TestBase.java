@@ -37,10 +37,10 @@ public class TestBase {
 
         public static void initialization() {
             String browserName = prop.getProperty("browser");
-              if (browserName.equals("chrome")){
-                  WebDriverManager.chromedriver().setup();
-            //if (browserName.equals("chrome")) { //webdriver mananger is not working with IF condition.
-                //System.setProperty("webdriver.chrome.driver", "/Users/rahul/Desktop/testing/chromedriver");
+              //if (browserName.equals("chrome")){
+                  //WebDriverManager.chromedriver().setup();
+            if (browserName.equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "/Users/rahul/Desktop/testing/chromedriver");
 
                 driver = new ChromeDriver();
                 e_driver = new EventFiringWebDriver(driver);

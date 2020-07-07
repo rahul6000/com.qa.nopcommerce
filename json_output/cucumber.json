@@ -12,62 +12,86 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 8111337427,
+              "status": "passed"
             },
             "line": 5,
             "name": "user is on home page",
-            "match": {},
+            "match": {
+              "location": "HomeStepDefinition.userIsOnHomePage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 11776569,
+              "status": "passed"
             },
-            "comments": [
-              {
-                "line": 6,
-                "value": "#When title home page is My Store"
-              }
-            ],
-            "line": 7,
-            "name": "logo image is displayed",
-            "match": {},
+            "line": 6,
+            "name": "title home page is My Store",
+            "match": {
+              "location": "HomeStepDefinition.titleHomePageIsMyStore()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 114384321,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "logo image is displayed",
+            "match": {
+              "location": "HomeStepDefinition.logoImageIsDisplayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3636445916,
+              "status": "passed"
             },
             "line": 8,
-            "name": "user inputs in search bar and user enters \"\u003csearch\u003e\" and click",
-            "match": {},
+            "name": "user inputs in search bar and click",
+            "match": {
+              "location": "HomeStepDefinition.userInputsInSearchBarAndClick()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 156609572,
+              "status": "passed"
             },
             "line": 9,
             "name": "user hoover on computer label",
-            "match": {},
+            "match": {
+              "location": "HomeStepDefinition.userHooverOnComputerLabel()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 167415516,
+              "status": "passed"
             },
             "line": 10,
             "name": "user clicks on excellent radio button",
-            "match": {},
+            "match": {
+              "location": "HomeStepDefinition.userClicksOnExcellentRadioButton()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 221033173,
+              "status": "passed"
             },
             "line": 11,
             "name": "exit the browser",
-            "match": {},
+            "match": {
+              "location": "HomeStepDefinition.exitTheBrowser()"
+            },
             "keyword": "Then "
           }
         ]

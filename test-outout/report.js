@@ -20,19 +20,18 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 6,
-      "value": "#When title home page is My Store"
-    }
-  ],
+  "line": 6,
+  "name": "title home page is My Store",
+  "keyword": "When "
+});
+formatter.step({
   "line": 7,
   "name": "logo image is displayed",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "user inputs in search bar and user enters \"\u003csearch\u003e\" and click",
+  "name": "user inputs in search bar and click",
   "keyword": "Then "
 });
 formatter.step({
@@ -50,28 +49,53 @@ formatter.step({
   "name": "exit the browser",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomeStepDefinition.userIsOnHomePage()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 8111337427,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomeStepDefinition.titleHomePageIsMyStore()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 11776569,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomeStepDefinition.logoImageIsDisplayed()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 114384321,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeStepDefinition.userInputsInSearchBarAndClick()"
+});
+formatter.result({
+  "duration": 3636445916,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeStepDefinition.userHooverOnComputerLabel()"
+});
+formatter.result({
+  "duration": 156609572,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeStepDefinition.userClicksOnExcellentRadioButton()"
+});
+formatter.result({
+  "duration": 167415516,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomeStepDefinition.exitTheBrowser()"
+});
+formatter.result({
+  "duration": 221033173,
+  "status": "passed"
 });
 });

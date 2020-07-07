@@ -1,6 +1,7 @@
 package com.qa.auto.pages;
 
 import com.qa.auto.base.TestBase;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -20,8 +21,9 @@ public class HomePage extends TestBase {
     @FindBy(xpath="/html/body/div[6]/div[2]/ul[1]/li[1]/a")
     WebElement computerLabel;
 
-    @FindBy(linkText = "Excellent")
+    @FindBy(id="pollanswers-1")
     WebElement excellRadioBtn;
+
 
 
 
@@ -30,21 +32,28 @@ public class HomePage extends TestBase {
     }
 
 
-    public void searchbar(String search) {
+    public void searchbar(String searchdata) {
         //searchBar.sendKeys(search);
-        searchBar.sendKeys(prop.getProperty(search));
+        driver.navigate().refresh();
+        searchBar.sendKeys(searchdata);
         searchBtn.click();
+
     }
-    public boolean validateLogoImg() {
-        return logoImg.isDisplayed();
+    public void validateTitle(){
+        driver.getTitle();
+    }
+    public void validateLogoImg() {
+        logoImg.isDisplayed();
     }
     public void compLabel(){
         Actions action= new Actions (driver);
         action.moveToElement(computerLabel).build().perform();
     }
     public void radioBtn1(){
+        //JavascriptExecutor js=(JavascriptExecutor)driver;
+        //js.executeScript("arguments[0].click();",excellRadioBtn);
 
-        excellRadioBtn.click();
+                excellRadioBtn.click();
 
     }
 

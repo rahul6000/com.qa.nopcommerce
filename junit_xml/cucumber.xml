@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
-<testcase classname="Home Page Test" name="Nop Commerce HomePage Test Scenario" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is on home page..................................................undefined
-When logo image is displayed................................................undefined
-Then user inputs in search bar and user enters "<search>" and click.........undefined
-Then user hoover on computer label..........................................undefined
-Then user clicks on excellent radio button..................................undefined
-Then exit the browser.......................................................undefined
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.419002">
+<testcase classname="Home Page Test" name="Nop Commerce HomePage Test Scenario" time="12.419002">
+<system-out><![CDATA[Given user is on home page..................................................passed
+When title home page is My Store............................................passed
+When logo image is displayed................................................passed
+Then user inputs in search bar and click....................................passed
+Then user hoover on computer label..........................................passed
+Then user clicks on excellent radio button..................................passed
+Then exit the browser.......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
